@@ -289,3 +289,31 @@ span{
     color: white;
 }
 
+
+
+.scrollToTop-btn{
+    z-index: 999;
+    position: fixed;
+    background: orangered;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    right: 5%;
+    bottom: 5%;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 3px;
+    /*
+    pointer-events: none;
+    */
+    display: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .scrollToTop-btn:hover{
+
+    box-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    cursor: pointer;
+  }

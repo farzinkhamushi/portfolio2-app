@@ -9,6 +9,9 @@
     <title>Farzin khamushi - portfolio</title>
 </head>
 <body>
+    
+    <div class="scrollToTop-btn">↑</div>
+  
     <header class="header">
         <a href="#" class="logo"><span>Far</span>zin</a>
         <nav class="navbar">
@@ -99,5 +102,24 @@
 
         <p class="copyright">@ 2025 Farzin | All Rights Reserved thanks for hannah</p>
     </footer>
+
+    <script>
+        const scrolltotop_btn = document.querySelector(".scrollToTop-btn")
+        scrolltotop_btn.addEventListener("click", () => {
+            //document.documentElement.scrollTop = 0;
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+        window.addEventListener("scroll", function(){
+            if (window.scrollY > 300 || document.documentElement.scrollTop > 300) {
+                scrolltotop_btn.style.display = "block";
+            }
+            if (window.scrollY <= 0 || document.documentElement.scrollTop <= 300) {
+                scrolltotop_btn.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>
